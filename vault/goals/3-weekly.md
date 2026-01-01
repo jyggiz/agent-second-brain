@@ -1,15 +1,16 @@
 ---
 type: weekly
-week: YYYY-WWW
-updated: YYYY-MM-DD
+week: 2026-W01
+updated: 2026-01-01
 ---
 
-# Weekly Focus
+# Weekly Focus — Неделя 1, Январь 2026
 
 ## ONE Big Thing
 
 > **If I accomplish nothing else, I will:**
-> [Single most important outcome for this week]
+> 
+> **Завершить первые 4 модуля NestJS Fundamentals курса (Getting Started, Creating REST API, PostgreSQL with TypeORM, Dependency Injection) — 43 урока**
 
 <!-- This is read by the bot during daily processing -->
 
@@ -17,9 +18,10 @@ updated: YYYY-MM-DD
 
 ## Week at a Glance
 
-**Week:** [X] of 52
-**Energy Level:** [High/Medium/Low]
-**Available Hours:** [X] hours focused work
+**Week:** 1 of 52  
+**Energy Level:** Medium (новогодние выходные, семейное время)  
+**Available Hours:** ~8 часов сфокусированной работы (2 часа в день, 2-5 января)  
+**Key Focus:** Старт фундамента — NestJS курс + запуск систем здоровья и семьи
 
 ---
 
@@ -27,53 +29,60 @@ updated: YYYY-MM-DD
 
 ### Must Do (Non-negotiable)
 
-- [ ] Task 1 — Связь: [[1-yearly-2025#Goal]]
-- [ ] Task 2
-- [ ] Task 3
+- [ ] **Завершить 4 модуля NestJS Fundamentals** (43 урока) — Связь: [[1-yearly-2026#Career Goal 1]]
+- [ ] **Первый чек-ин с женой в воскресенье** — оценка отношений, запись в бота — Связь: [[1-yearly-2026#Relationships]]
+- [ ] **Запустить личный журнал** — первая запись сегодня, продолжать ежедневно — Связь: [[1-yearly-2026#Creativity & Joy]]
+- [ ] **Настроить Headspace** — подготовка к медитациям — Связь: [[1-yearly-2026#Health]]
+- [ ] **Настроить Endel** — для фокусной работы — Связь: [[1-yearly-2026#Health]]
 
 ### Should Do (Important)
 
-- [ ] Task 1
-- [ ] Task 2
+- [ ] Начать медитировать через Headspace (цель 5 дней на неделе)
+- [ ] Отслеживать сон через Sleep Tracker (настроить приложение)
+- [ ] Прочитать главу из "Хулиномика" или "Деньги для дураков" на выходных
 
 ### Could Do (If time permits)
 
-- [ ] Task 1
-- [ ] Task 2
+- [ ] Набросать идеи для backend boilerplate (предварительное планирование)
+- [ ] Посмотреть дополнительные материалы по NestJS
 
 ---
 
 ## Daily Plan
 
-### Monday
+### Среда, 1 января
+- [x] Запустить личный журнал — первая запись
+- [x] Определить ONE Big Thing на неделю
+- [ ] Семейное время, отдых
 
-- [ ] Task 1
-- [ ] Task 2
+### Четверг, 2 января
+- [ ] Настроить Headspace и Endel
+- [ ] Настроить Sleep Tracker
+- [ ] Начать NestJS курс: модуль **Getting Started** (4 урока)
+- [ ] Первая медитация через Headspace
+- [ ] Запись в личный журнал
+- [ ] Работа с Endel во время обучения
 
-### Tuesday
+### Пятница, 3 января
+- [ ] NestJS: модуль **Creating REST API** (первая половина, ~7 уроков)
+- [ ] Медитация через Headspace
+- [ ] Запись в личный журнал
+- [ ] Отслеживание сна через Sleep Tracker
 
-- [ ] Task 1
-- [ ] Task 2
+### Суббота, 4 января
+- [ ] NestJS: модуль **Creating REST API** (вторая половина, ~8 уроков)
+- [ ] Начать модуль **PostgreSQL with TypeORM** (первые несколько уроков)
+- [ ] Медитация через Headspace
+- [ ] Запись в личный журнал
+- [ ] Почитать главу из книги по финансам на выходных
 
-### Wednesday
-
-- [ ] Task 1
-- [ ] Task 2
-
-### Thursday
-
-- [ ] Task 1
-- [ ] Task 2
-
-### Friday
-
-- [ ] Task 1
-- [ ] Task 2
-
-### Weekend
-
-- [ ] Rest / Family time
-- [ ] Optional task
+### Воскресенье, 5 января
+- [ ] NestJS: завершить **PostgreSQL with TypeORM** (оставшиеся уроки)
+- [ ] NestJS: модуль **Dependency Injection** (11 уроков)
+- [ ] **Первый чек-ин с женой** — оценка отношений (её + моя), запись в бота
+- [ ] Медитация через Headspace
+- [ ] Запись в личный журнал
+- [ ] Weekly Review — оценка прогресса
 
 ---
 
@@ -81,47 +90,94 @@ updated: YYYY-MM-DD
 
 | Day | Time | Event | Prep |
 |-----|------|-------|------|
-| Mon | | | |
-| Tue | | | |
+| Чт 2 | - | Настройка систем (Headspace, Endel, Sleep Tracker) | - |
+| Вс 5 | Вечер | Первый чек-ин с женой | Подготовить вопросы для чек-ина |
+| Вс 5 | Вечер | Weekly Review | Оценить прогресс по ONE Big Thing |
+
+**Примечание:** Звонки с Thijs начинаются со второй половины января (не на этой неделе)
 
 ---
 
 ## Habits Tracker
 
-| Habit | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
-|-------|-----|-----|-----|-----|-----|-----|-----|
-| [Habit 1] | | | | | | | |
-| [Habit 2] | | | | | | | |
-| [Habit 3] | | | | | | | |
+| Habit | Чт 2 | Пт 3 | Сб 4 | Вс 5 | Target |
+|-------|------|------|------|------|--------|
+| Медитация (Headspace) | ⬜ | ⬜ | ⬜ | ⬜ | 4/4 дня |
+| Сон 8 часов (Sleep Tracker) | ⬜ | ⬜ | ⬜ | ⬜ | 4/4 ночи |
+| Запись в личный журнал | ⬜ | ⬜ | ⬜ | ⬜ | 4/4 дня |
+
+**Легенда:** ⬜ = Не выполнено | ✅ = Выполнено | ❌ = Пропущено
+
+---
+
+## Progress Tracking
+
+### NestJS Course Progress
+
+| Module | Lessons | Status |
+|--------|---------|--------|
+| Getting Started | 4 | ⬜ Not started |
+| Creating REST API | 15 | ⬜ Not started |
+| PostgreSQL with TypeORM | 13 | ⬜ Not started |
+| Dependency Injection | 11 | ⬜ Not started |
+
+**Total:** 0/43 уроков завершено (0%)
 
 ---
 
 ## End of Week Review
 
 ### What Worked
-
--
+- 
+- 
+- 
 
 ### What Didn't Work
-
--
+- 
+- 
+- 
 
 ### Lessons Learned
-
--
+- 
+- 
+- 
 
 ### Next Week Focus
 
->
+> **Неделя 2 (6-12 января):**
+> - Продолжение NestJS курса (следующие модули)
+> - Возможно kickoff по Step2Travel
+> - Поддержание привычек медитации, сна, журнала
+
+---
+
+## Notes & Reminders
+
+**На эту неделю:**
+- Это первая неделя января — закладываю фундамент для всего месяца и года
+- Фокус на ONE Big Thing: NestJS курс
+- Параллельно запускаю все ключевые системы: здоровье, семья, журнал
+- Новогодние выходные — семейное время важнее всего
+
+**Energy Management:**
+- 2 часа сфокусированной работы в день — реалистично
+- Работать с Endel для поддержания фокуса
+- Медитация для восстановления энергии
+
+**Family First:**
+- Если возникнет конфликт между учёбой и семьёй — семья на первом месте
+- Первый чек-ин с женой — это инвестиция в отношения
 
 ---
 
 ## Links
 
-- [[2-monthly]] - Monthly priorities
-- [[1-yearly-2025]] - Yearly goals
-- Previous: [[3-weekly-YYYY-WXX]]
+- [[2-monthly-2026-01]] - Monthly priorities (Январь 2026)
+- [[1-yearly-2026]] - Yearly goals 2026
+- [[0-vision-3y]] - 3-year vision 2026-2028
+- Next: [[3-weekly-2026-W02]]
 
 ---
 
-*Week Started: YYYY-MM-DD*
+*Week Started: 2026-01-01 (среда)*  
+*Week Ends: 2026-01-05 (воскресенье)*

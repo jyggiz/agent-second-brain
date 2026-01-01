@@ -1,58 +1,57 @@
 # Entry Classification
 
-<!--
-╔══════════════════════════════════════════════════════════════════╗
-║  КАК НАСТРОИТЬ ЭТОТ ФАЙЛ                                         ║
-╠══════════════════════════════════════════════════════════════════╣
-║  1. Замените [Your Client Names] на имена ваших клиентов        ║
-║  2. Замените [Your Company] на название вашей компании          ║
-║  3. Замените [@your_channel] на ваш Telegram-канал              ║
-║  4. Добавьте свои домены работы, если они отличаются            ║
-║  5. Удалите этот комментарий после настройки                    ║
-╚══════════════════════════════════════════════════════════════════╝
--->
-
 ## Work Domains → Categories
 
 Based on user's work context (see [ABOUT.md](ABOUT.md)):
 
-### Client Work
-Брифы, стратегии, креатив, кампании, KPI, предложения
+### Infoland Work
+Внутренние проекты компании: Step2Travel, Aura, будущие продукты
 
-<!-- Добавьте имена ваших клиентов через запятую -->
-**Keywords:** [Your Client Names], клиент, бриф, презентация, дедлайн, KPI
+**Keywords:** Step2Travel, Aura, Infoland, команда (Erniaz, Adil), спринт, релиз, презентация руководству, дедлайн проекта
 
-**→ Category:** task (p1-p2) → Todoist
+**→ Category:** task (p1) → Todoist → Project: Infoland
+
+### Freelance Work
+Фриланс-проекты: партнёрство с Thijs (MediaMonks), клиенты на Upwork
+
+**Keywords:** Thijs, Upwork, клиент, фриланс, CMS (AEM, Contentful, Strapi), freelance project
+
+**→ Category:** task (p3, если дедлайн → p1-p2) → Todoist → Project: Freelance
+
+### Learning & Certifications
+Курсы, сертификации, обучение новым технологиям
+
+**Keywords:** NestJS, AWS, AEM, Software Essentialist, курс, сертификация, обучение, документация, туториал
+
+**→ Category:** learning → thoughts/learnings/ или task если с дедлайном → Project: Learning
 
 ### AI & Tech
-Инструменты, модели, промпты, пайплайны, агенты
+Инструменты, модели, промпты, AI-first разработка, автоматизация
 
-**Keywords:** GPT, Claude, модель, агент, API, пайплайн, автоматизация, интеграция
+**Keywords:** GPT, Claude, Claude Code, модель, агент, API, пайплайн, автоматизация, интеграция, AI-first, TDD
 
 **→ Category:** learning или project → thoughts/
 
-### Product
-Идеи, гипотезы, MVP, юнит-экономика
+### Product & SaaS
+Идеи, гипотезы, MVP, юнит-экономика, собственные продукты
 
-**Keywords:** продукт, SaaS, MVP, гипотеза, монетизация, юнит-экономика, стартап
+**Keywords:** продукт, SaaS, MVP, гипотеза, монетизация, юнит-экономика, стартап, business model
 
 **→ Category:** idea или project → thoughts/
 
-### Company Ops
-Команда, процессы, автоматизация, найм, управление, финансы
+### Personal & Family
+Семья, здоровье, личное развитие, хобби
 
-<!-- Замените [Your Company] на название вашей компании/проекта -->
-**Keywords:** команда, найм, процесс, HR, финансы, [Your Company]
+**Keywords:** сын, жена, семья, здоровье, медитация, сон, спорт, баня, настольный теннис, личный журнал
 
-**→ Category:** task или project (depends on urgency)
+**→ Category:** task (p1) → Todoist → Project: Personal
 
-### Content
-Посты, идеи, тезисы для Telegram и LinkedIn
+### Blog & Content
+Технический блог в Notion, статьи, посты
 
-<!-- Замените [@your_channel] на ваш Telegram-канал или удалите если не нужно -->
-**Keywords:** пост, [@your_channel], LinkedIn, контент, тезис, статья
+**Keywords:** блог, статья, пост, Notion, технический контент, tutorial
 
-**→ Category:** idea → thoughts/ideas/ или task если с дедлайном
+**→ Category:** idea → thoughts/ideas/ или task если с дедлайном → Project: Blog
 
 ---
 
@@ -61,14 +60,23 @@ Based on user's work context (see [ABOUT.md](ABOUT.md)):
 ```
 Entry text contains...
 │
-├─ Client brand or deadline? ────────────────────> TASK (p1-p2)
-│  ([Your Clients], клиент, дедлайн, презентация)
+├─ Family/Personal urgent? ──────────────────────> TASK (p1)
+│  (сын, жена, семья, здоровье, срочно личное)
 │
-├─ Operational/urgent? ──────────────────────────> TASK (p2-p3)
-│  (нужно сделать, не забыть, позвонить, встреча)
+├─ Infoland projects? ───────────────────────────> TASK (p1)
+│  (Step2Travel, Aura, команда, дедлайн проекта)
 │
-├─ AI/tech learning? ────────────────────────────> LEARNING
-│  (узнал, модель, агент, интеграция)
+├─ Freelance with deadline? ─────────────────────> TASK (p1-p2)
+│  (Thijs, Upwork, дедлайн клиента, срочно)
+│
+├─ Freelance regular? ───────────────────────────> TASK (p3)
+│  (Thijs, Upwork, без дедлайна)
+│
+├─ Learning/Course work? ────────────────────────> LEARNING или TASK (p3)
+│  (NestJS, AWS, AEM, курс, сертификация)
+│
+├─ AI/tech insight? ─────────────────────────────> LEARNING или PROJECT
+│  (Claude Code, агент, автоматизация, AI-first)
 │
 ├─ Product/SaaS idea? ───────────────────────────> IDEA или PROJECT
 │  (продукт, MVP, гипотеза, SaaS)
@@ -77,21 +85,35 @@ Entry text contains...
 │  (стратегия, план, R&D, долгосрочно)
 │
 ├─ Personal insight? ────────────────────────────> REFLECTION
-│  (понял, осознал, философия)
+│  (понял, осознал, философия, личное развитие)
 │
-└─ Content idea? ────────────────────────────────> IDEA
-   (пост, тезис, контент)
+└─ Blog/Content idea? ───────────────────────────> IDEA или TASK (p3)
+   (блог, статья, пост, Notion)
 ```
 
 ## Apply Decision Filters
 
 Перед сохранением спроси:
-- Это масштабируется?
-- Это можно автоматизировать?
-- Это усиливает экспертизу или бренд?
-- Это приближает к продукту или SaaS?
 
-Если да на 2+ вопроса → повысить приоритет.
+1. **Можно ли это делегировать?**
+   - Если да → задача бесполезна для роста, делегируй
+
+2. **Приближает ли это к финансовой независимости?**
+   - Влияет на доход, инвестиции, недвижимость?
+
+3. **Помогает ли это стать Lead Solution Engineer?**
+   - Развивает экспертизу в full-stack, AI-first, Cloud/DevOps?
+
+4. **Это можно автоматизировать?**
+   - Есть ли способ через Claude Code, Codex, CI/CD?
+
+5. **Это масштабируется?**
+   - Можно ли применить к нескольким проектам/клиентам?
+
+6. **Отнимает ли это время от семьи?**
+   - Если да → обговорено ли с женой? Стоит ли оно того?
+
+Если да на 2+ вопроса (кроме #6) → повысить приоритет.
 
 ---
 
@@ -110,15 +132,18 @@ For `[photo]` entries:
 
 ## Output Locations
 
-| Category | Destination | Priority |
-|----------|-------------|----------|
-| task (client) | Todoist | p1-p2 |
-| task (ops) | Todoist | p2-p3 |
-| task (content) | Todoist | p3-p4 |
-| idea | thoughts/ideas/ | — |
-| reflection | thoughts/reflections/ | — |
-| project | thoughts/projects/ | — |
-| learning | thoughts/learnings/ | — |
+| Category | Destination | Priority | Project |
+|----------|-------------|----------|---------|
+| task (family/personal) | Todoist | p1 | Personal |
+| task (Infoland) | Todoist | p1 | Infoland |
+| task (freelance deadline) | Todoist | p1-p2 | Freelance |
+| task (freelance) | Todoist | p3 | Freelance |
+| task (learning deadline) | Todoist | p3 | Learning |
+| task (blog deadline) | Todoist | p3 | Blog |
+| idea | thoughts/ideas/ | — | — |
+| reflection | thoughts/reflections/ | — | — |
+| project | thoughts/projects/ | — | — |
+| learning | thoughts/learnings/ | — | — |
 
 ---
 
@@ -145,7 +170,7 @@ Use preferred format:
 ---
 date: {YYYY-MM-DD}
 type: {category}
-domain: {Client Work|AI & Tech|Product|Agency Ops|Content}
+domain: {Infoland|Freelance|AI & Tech|Product|Personal|Blog}
 tags: [tag1, tag2]
 ---
 
@@ -156,8 +181,7 @@ tags: [tag1, tag2]
 [Ключевая идея]
 
 ## Implication
-<!-- Замените [Your Company] на название вашей компании -->
-[Что это значит для [Your Company]/продукта/стратегии]
+[Что это значит для карьеры/продукта/финансовой независимости/семьи]
 
 ## Next Action
 [Конкретный шаг — не абстрактный]

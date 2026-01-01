@@ -1,17 +1,5 @@
 # Todoist Integration
 
-<!--
-╔══════════════════════════════════════════════════════════════════╗
-║  КАК НАСТРОИТЬ ЭТОТ ФАЙЛ                                         ║
-╠══════════════════════════════════════════════════════════════════╣
-║  1. Замените [Your Clients] на имена ваших клиентов              ║
-║  2. Замените [Your Company] на название вашей компании           ║
-║  3. Замените [@your_channel] на ваш Telegram-канал               ║
-║  4. Измените примеры задач на релевантные для вас                ║
-║  5. Удалите этот комментарий после настройки                     ║
-╚══════════════════════════════════════════════════════════════════╝
--->
-
 ## Available MCP Tools
 
 ### Reading Tasks
@@ -65,29 +53,36 @@ Based on user's work context (see [ABOUT.md](ABOUT.md)):
 
 | Domain | Default Priority | Override |
 |--------|-----------------|----------|
-| Client Work | p1-p2 | — |
-| Agency Ops (urgent) | p2 | — |
-| Agency Ops (regular) | p3 | — |
-| Content (with deadline) | p2-p3 | — |
-| Product/R&D | p4 | масштабируемость → p3 |
-| AI & Tech | p4 | автоматизация → p3 |
+| Personal/Family | p1 | — |
+| Infoland (Step2Travel, Aura) | p1 | — |
+| Freelance (with deadline) | p1-p2 | — |
+| Freelance (regular) | p3 | дедлайн → p1-p2 |
+| Learning (with deadline) | p3 | срочность → p2 |
+| Learning (regular) | p4 | автоматизация/масштаб → p3 |
+| Blog/Content (with deadline) | p3 | — |
+| AI & Tech / Product | p4 | Decision Filters → p3 |
 
 ### Priority Keywords
 
 | Keywords in text | Priority |
 |-----------------|----------|
-| срочно, критично, дедлайн клиента | p1 |
+| семья, сын, жена, здоровье (срочно) | p1 |
+| Step2Travel, Aura, Infoland, дедлайн проекта | p1 |
+| Thijs, Upwork, дедлайн клиента, срочно фриланс | p1-p2 |
 | важно, приоритет, до конца недели | p2 |
-| нужно, надо, не забыть | p3 |
-| (strategic, R&D, long-term) | p4 |
+| нужно, надо, не забыть, фриланс (обычное) | p3 |
+| обучение, курс, исследование, долгосрочно | p4 |
 
 ### Apply Decision Filters for Priority Boost
 
 If entry matches 2+ filters → boost priority by 1 level:
-- Это масштабируется?
-- Это можно автоматизировать?
-- Это усиливает экспертизу/бренд?
-- Это приближает к продукту/SaaS?
+
+1. Можно ли это делегировать? (если да → не бустим, делегируем)
+2. Приближает ли это к финансовой независимости?
+3. Помогает ли это стать Lead Solution Engineer?
+4. Это можно автоматизировать?
+5. Это масштабируется?
+6. Отнимает ли это время от семьи? (если да → проверяем согласование)
 
 ---
 
@@ -95,11 +90,12 @@ If entry matches 2+ filters → boost priority by 1 level:
 
 | Context | dueString |
 |---------|-----------|
-| **Client deadline** | exact date |
-| **Urgent ops** | today / tomorrow |
+| **Family urgent** | today / tomorrow |
+| **Infoland deadline** | exact date |
+| **Freelance deadline** | exact date |
 | **This week** | friday |
 | **Next week** | next monday |
-| **Strategic/R&D** | in 7 days |
+| **Learning/Strategic** | in 7 days |
 | **Not specified** | in 3 days |
 
 ### Russian → dueString
@@ -133,16 +129,17 @@ add-tasks:
 
 User prefers: прямота, ясность, конкретика
 
-<!-- Замените примеры на релевантные для вас -->
 ✅ Good:
-- "Отправить презентацию клиенту"
-- "Созвон с командой по проекту"
-- "Написать пост про [тема]"
+- "Завершить модуль Authentication для Step2Travel"
+- "Созвон с Thijs по AEM проекту"
+- "Пройти 2 урока NestJS Fundamentals"
+- "Еженедельный чек-ин с женой"
 
 ❌ Bad:
-- "Подумать о презентации"
-- "Что-то с клиентом"
-- "Разобраться с AI"
+- "Подумать о Step2Travel"
+- "Что-то с Thijs"
+- "Разобраться с NestJS"
+- "Поговорить с женой"
 
 ### Workload Balancing
 
@@ -155,17 +152,13 @@ If target day has 3+ tasks:
 
 ## Project Detection
 
-<!--
-Настройте под свои проекты в Todoist.
-Замените примеры клиентов и название канала.
--->
-
 | Keywords | Project |
 |----------|---------|
-| [Your Client Names], клиент, бренд | Client Work |
-| [Your Company], команда, найм, процессы | Company Ops |
-| продукт, SaaS, MVP | Product |
-| пост, [@your_channel], контент | Content |
+| Step2Travel, Aura, Infoland, команда (Erniaz, Adil) | Infoland |
+| Thijs, Upwork, фриланс, клиент, AEM, Contentful, Strapi | Freelance |
+| NestJS, курс, AWS, AEM сертификация, обучение, Software Essentialist | Learning |
+| сын, жена, семья, здоровье, медитация, сон, баня, теннис | Personal |
+| блог, статья, пост, Notion, технический контент | Blog |
 
 If unclear → use Inbox (no projectId).
 
